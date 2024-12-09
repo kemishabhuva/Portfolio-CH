@@ -1,0 +1,476 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-1140 {
+    width: 1140px;
+    height: auto;
+}
+
+/* heder start */
+
+.header {
+    width: 100%;
+}
+
+.header-bg {
+    width: 100%;
+    height: auto;
+    background: black url(https://wallpapers.com/images/hd/black-blur-background-eqtxu9js4n5ulcx5.jpg)no-repeat 0 0;
+    background-size: cover;
+}
+
+.line {
+    width: 500px;
+    height: 1px;
+    background-color: white;
+    opacity: 40%;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 111;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+ul ul{
+    display: block;
+    background-color: red;
+    display: none;
+    position:absolute;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+   
+}
+
+ul li:hover ul{
+    display: block;
+    transition: 2s;
+} 
+
+ul li:hover a{
+    color: red;
+    transition: 2s;
+    cursor: pointer;
+}
+
+ul li:hover ul li a{
+    color: rgb(255, 255, 255);
+}
+
+ul ul li a{
+    width: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.carousel img{
+    cursor: pointer;
+}
+
+
+.item { 
+    height: 600px;
+    opacity: 1;
+    transition: .4s ease all; 
+    margin: 0 0px;
+    transform: scale(0.9);
+}
+
+.active .item {
+    width: 100%;
+
+    opacity: 1;
+    transform: scale(1);
+}
+
+.owl-nav {
+    font-size: 60px;
+    color: #fff;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+}
+
+.owl-next {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+}
+
+@media(max-width:1000px) {
+    .item {
+        margin: 0;
+        transform: scale(0.8)
+    }
+}
+.owl-theme .owl-dots{
+    display: none;
+}
+
+.button-1{
+    align-items: center;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    transition: 1s;
+}
+
+:hover.button-1{
+   background-color: gray;
+}
+
+.button-2{
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: 1s;
+}
+
+:hover.button-2{
+   background-color: rgb(102, 98, 98);
+   color: white;
+}
+
+
+/* header end */
+
+/* second-page start */
+.sc-round-b{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: solid 1px rgb(80, 78, 78);
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.sc-round-s{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    border: solid 2px rgb(156, 154, 154);
+    position: relative;
+    top: -140px;
+    transition: 1s;
+
+}
+
+
+.col-3:hover .sc-round-b 
+{
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+
+.col-3:hover .sc-red{
+    color: red;
+}
+
+.col-3:hover .sc-round-s{
+    background-color: red;
+    color: white;
+}
+
+.hover-svg{
+    display: none;
+}
+
+.col-3:hover .hover-svg{
+    display: block;
+} 
+
+/* second-page end */
+
+/* Mission Page Start */
+
+.mission-btn{
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+:hover.mission-btn{
+    background-color: gray;
+}
+/* Mission Page End */
+
+/* Portfolio Page Start */
+.portfolio-img-1{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/1.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+
+.portfolio-img-2{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/2.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+
+.portfolio-img-3{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/3.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-4{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/4.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-5{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/5.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-6{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/6.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-7{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/7.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-8{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/8.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-9{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/9.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-10{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/10.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-11{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/11.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-12{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/12.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-13{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/13.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-14{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/14.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-15{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/15.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-16{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/16.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-17{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/17.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.portfolio-img-18{
+    height: 300px;
+    background: black url(https://beantown.website/html/chemistry/demo/projects/home/18.jpg)no-repeat 0 0;
+    background-size:cover ;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+ margin-top: -20px;
+}
+
+.portfolio-round{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 50%;
+}
+
+
+.portfolio-red{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    opacity: 80%;
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.portfolio-img-1:hover .portfolio-red,
+.portfolio-img-2:hover .portfolio-red,
+.portfolio-img-3:hover .portfolio-red,
+.portfolio-img-4:hover .portfolio-red,
+.portfolio-img-5:hover .portfolio-red,
+.portfolio-img-6:hover .portfolio-red,
+.portfolio-img-7:hover .portfolio-red,
+.portfolio-img-8:hover .portfolio-red,
+.portfolio-img-9:hover .portfolio-red,
+.portfolio-img-10:hover .portfolio-red,
+.portfolio-img-11:hover .portfolio-red,
+.portfolio-img-12:hover .portfolio-red,
+.portfolio-img-13:hover .portfolio-red,
+.portfolio-img-14:hover .portfolio-red,
+.portfolio-img-15:hover .portfolio-red,
+.portfolio-img-16:hover .portfolio-red,
+.portfolio-img-17:hover .portfolio-red,
+.portfolio-img-18:hover .portfolio-red{
+    display: block;
+}
+
+.item{
+    height: 600px;
+}
+
+.port-img-1{
+    /* position: absolute; */
+    width: 100%;
+    height: auto;
+    background-color: #02091C;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+  /* Portfolio Page End */
+
+  /* Footer Page Start */
+  .fr-1,.fr-2,.fr-3,.fr-4,.fr-5{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative; 
+  }
+
+  .fr-1:hover {
+    background-color: #f9e4df;
+}
+
+.fr-2:hover {
+    background-color: #f9e4df;
+}
+.fr-3:hover {
+    background-color: #f9e4df;
+}
+.fr-4:hover {
+    background-color: #f9e4df;
+}
+.fr-5:hover {
+    background-color: #f9e4df;
+}
+
+.frc-1,.frc-2,.frc-3,.frc-4,.frc-5{
+    width: 45px;
+    height: 45px;
+    background-color: #E96546;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  /* Footer Page End */
+
+
+
